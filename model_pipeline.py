@@ -32,5 +32,5 @@ def query_model(prompt: str) -> str:
     )
 
     text = tokenizer.decode(outputs[0], skip_special_tokens=True)
-    response = text.replace(input_text, "").strip()
+    response = text.replace(input_text, "")
     return response
